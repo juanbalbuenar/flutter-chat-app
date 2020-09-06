@@ -15,18 +15,20 @@ class RegisterPage extends StatelessWidget {
         child: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Container(
-            height: MediaQuery.of(context).size.height * 0.9,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Logo(texto: 'Registro' ),
                 _Form(),
+                SizedBox(height: 20),
                 Labels( 
                 ruta: 'login', 
                 texto1: '¿Ya tienes una cuenta?', 
                 texto2: 'Ingresa ahora!',
                 ),
-                Text('Terminos y condiciones de uso', style: TextStyle(fontWeight: FontWeight.w200),)
+                SizedBox(height: 10),
+                Text('Terminos y condiciones de uso', style: TextStyle(fontWeight: FontWeight.w200),),
+                SizedBox(height: 10)
               ],
             ),
           ),
